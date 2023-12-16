@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["cross_platform"]
 lock_version = "4.4"
-content_hash = "sha256:47abc413d230a6f5632a3fd5e9317b0f46cddb015af0125a4d5b77e31454fd83"
+content_hash = "sha256:5b3d29f887acd24798226e94dfa0aa1f0743774916f769acdfb6aa81e84d990c"
 
 [[package]]
 name = "appnope"
@@ -854,6 +854,21 @@ dependencies = [
 files = [
     {file = "python-dateutil-2.8.2.tar.gz", hash = "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"},
     {file = "python_dateutil-2.8.2-py2.py3-none-any.whl", hash = "sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"},
+]
+
+[[package]]
+name = "python-dlshogi"
+version = "0.0.0"
+requires_python = ">=3.11"
+editable = true
+path = "./."
+summary = ""
+dependencies = [
+    "ipykernel>=6.27.1",
+    "matplotlib>=3.8.2",
+    "python-dlshogi @ file:///${PROJECT_ROOT}/.",
+    "torch>=2.1.1",
+    "torchvision>=0.16.1",
 ]
 
 [[package]]

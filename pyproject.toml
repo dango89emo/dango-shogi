@@ -11,11 +11,12 @@ dependencies = [
     "torchvision>=0.16.1",
     "ipykernel>=6.27.1",
     "matplotlib>=3.8.2",
+    "python-dlshogi @ file:///${PROJECT_ROOT}/",
 ]
 requires-python = ">=3.11"
 license = {text = "MIT"}
 
 [tool.pdm.dev-dependencies]
 dev = [
-    "-e file:///${PROJECT_ROOT}/#egg=dangoshogi",
+    "-e file:///${PROJECT_ROOT}/#egg=python-dlshogi",
 ]
